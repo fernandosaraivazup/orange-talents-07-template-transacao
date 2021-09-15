@@ -48,4 +48,13 @@ public class Estabelecimento {
         return endereco;
     }
 
+    @Override
+    public String toString() {
+        return "Estabelecimento{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", cidade='" + cidade + '\'' +
+                ", endereco='" + endereco + '\'' +
+                '}';
+    }
 }

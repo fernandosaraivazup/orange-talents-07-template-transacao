@@ -10,20 +10,16 @@ import java.time.LocalDateTime;
 public class Transacao {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idBanco;
-
-    //TODO: tem como gerar id a partir da string recebida?
     private String id;
 
     @NotNull
     @Positive
     private BigDecimal valor;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     private Estabelecimento estabelecimento;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     private Cartao cartao;
 
     @NotNull

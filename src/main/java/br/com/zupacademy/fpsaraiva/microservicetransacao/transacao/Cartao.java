@@ -11,10 +11,6 @@ import javax.validation.constraints.NotBlank;
 public class Cartao {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idBanco;
-
-    //TODO: tem como gerar id a partir da string recebida?
     private String id;
 
     @NotBlank
