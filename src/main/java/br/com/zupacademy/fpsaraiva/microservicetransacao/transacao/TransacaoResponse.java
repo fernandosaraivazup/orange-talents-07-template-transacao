@@ -5,8 +5,6 @@ import java.time.LocalDateTime;
 
 public class TransacaoResponse {
 
-    private Long idBanco;
-
     private String id;
 
     private BigDecimal valor;
@@ -25,15 +23,4 @@ public class TransacaoResponse {
         this.efetivadaEm = transacao.getEfetivadaEm();
     }
 
-    @Override
-    public String toString() {
-        return "TransacaoResponse{" +
-                "idBanco=" + idBanco +
-                ", id='" + id + '\'' +
-                ", valor=" + valor +
-                ", estabelecimento=" + estabelecimento +
-                ", cartao=" + cartao +
-                ", efetivadaEm=" + efetivadaEm +
-                '}';
-    }
 }

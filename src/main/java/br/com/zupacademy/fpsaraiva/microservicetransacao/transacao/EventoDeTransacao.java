@@ -57,7 +57,6 @@ public class EventoDeTransacao {
     }
 
     public Transacao toModel() {
-        //entityManager detach aqui?
         return new Transacao(this.id, this.valor, this.estabelecimento.toModel(), this.cartao.toModel(), this.efetivadaEm);
     }
 
