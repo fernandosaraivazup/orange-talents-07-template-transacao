@@ -1,4 +1,4 @@
-package br.com.zupacademy.fpsaraiva.microservicetransacao.config;
+package br.com.zupacademy.fpsaraiva.microservicetransacao.compartilhado;
 
 import java.util.Collection;
 

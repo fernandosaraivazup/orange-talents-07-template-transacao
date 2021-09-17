@@ -1,10 +1,9 @@
 package br.com.zupacademy.fpsaraiva.microservicetransacao.consultacompras;
 
-import br.com.zupacademy.fpsaraiva.microservicetransacao.config.ApiErroException;
+import br.com.zupacademy.fpsaraiva.microservicetransacao.compartilhado.ApiErroException;
 import br.com.zupacademy.fpsaraiva.microservicetransacao.transacao.Cartao;
 import br.com.zupacademy.fpsaraiva.microservicetransacao.transacao.Transacao;
 import br.com.zupacademy.fpsaraiva.microservicetransacao.transacao.TransacaoRepository;
-import br.com.zupacademy.fpsaraiva.microservicetransacao.transacao.TransacaoResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
